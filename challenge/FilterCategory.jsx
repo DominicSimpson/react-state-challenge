@@ -3,7 +3,7 @@ import dishes from "./data.js";
 const categories = [...new Set(dishes.map((dish) => dish.category))];
 
 
-    export default function FilterCategory() { 
+    export default function FilterCategory( {category, setCategory} ) { 
         return (
         <fieldset>
             <legend>Category</legend>

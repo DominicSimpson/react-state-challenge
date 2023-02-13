@@ -8,7 +8,7 @@ import ListDishes from "./ListDishes.jsx";
 // const categories = [...new Set(dishes.map((dish) => dish.category))];
 
 function App() {
-  const [max, setMax] = useState(9);
+  const [max, setMax] = useState(0);
   return (
     <main>
       <section aria-label="filters">
@@ -18,7 +18,7 @@ function App() {
             <h2>Filter dishes</h2>
               <FilterPrice max={max} setMax ={setMax}/>
               <FilterCategory/>
-              <ListDishes/>
+              <ListDishes max={categories} setMax = {setCategories}/>
           </form>
         </div>
       </section>

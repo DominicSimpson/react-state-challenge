@@ -1,7 +1,10 @@
-// import prices from "./data.js";
+// import prices from "./app.jsx";
 
 export default function FilterPrice({ max, setMax }) { 
-    return (
+        function update(event) {
+            setMax(+event.target.value);
+        }
+        return (
     <fieldset>
         <legend>Price</legend>
             <label htmlFor="max-price">
@@ -12,7 +15,7 @@ export default function FilterPrice({ max, setMax }) {
             min="0.5"
             max="9"
             step="0.25"
-            value="Max"
+            value={max}
             onChange={update}
         />
         </label>
