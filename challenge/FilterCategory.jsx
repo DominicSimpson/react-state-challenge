@@ -4,6 +4,9 @@ const categories = [...new Set(dishes.map((dish) => dish.category))];
 
 
     export default function FilterCategory( {category, setCategory} ) { 
+        function update(event) {
+            setCategory(+event.target.value);
+        }
         return (
         <fieldset>
             <legend>Category</legend>

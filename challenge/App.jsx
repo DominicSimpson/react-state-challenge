@@ -18,7 +18,7 @@ function App() {
             <h2>Filter dishes</h2>
               <FilterPrice max={max} setMax ={setMax}/>
               <FilterCategory/>
-              <ListDishes max={categories} setMax = {setCategories}/>
+              <ListDishes max={max} setMax = {setMax}/>
           </form>
         </div>
       </section>
