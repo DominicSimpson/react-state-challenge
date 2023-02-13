@@ -1,5 +1,7 @@
 import dishes from "./data.js";
 
+   export default function ListDishes() { 
+    return (
     <section aria-label="dishes">
         <ul className="grid">
           {dishes.map((dish) => (
@@ -11,3 +13,6 @@ import dishes from "./data.js";
           ))}
         </ul>
     </section>
+    )
+   }
+
