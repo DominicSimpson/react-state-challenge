@@ -1,4 +1,7 @@
-// import dishes from "./data.js";
+import dishes from "./data.js";
+
+const categories = [...new Set(dishes.map((dish) => dish.category))];
+
 
     export default function FilterCategory() { 
         return (
