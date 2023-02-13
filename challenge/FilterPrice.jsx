@@ -1,6 +1,6 @@
 // import prices from "./data.js";
 
-export default function FilterPrice() { 
+export default function FilterPrice({ max, setMax }) { 
     return (
     <fieldset>
         <legend>Price</legend>
@@ -12,8 +12,11 @@ export default function FilterPrice() {
             min="0.5"
             max="9"
             step="0.25"
+            value="Max"
+            onChange={update}
         />
         </label>
     </fieldset>
     )
 }
+
